@@ -102,7 +102,7 @@ if st.button("convert"):
     audio_file = open(f"temp/{result}.mp3", "rb")
     audio_bytes = audio_file.read()
     st.markdown(f"## Your audio:")
-    st.audio(audio_bytes, format="audio/ogg", start_time=0)
+    st.audio(audio_bytes, format="audio/mp3", start_time=0)
 
     if display_output_text:
         st.markdown(f"## Output text:")
